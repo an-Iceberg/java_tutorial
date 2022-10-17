@@ -1,4 +1,5 @@
 public class Main {
+
   public static void main(String[] args) {
     // Typ name;
     double bigNumber; // Initialisation
@@ -7,6 +8,7 @@ public class Main {
     // Typ name = value;
     int someInt = 10; // Declaration
 
+    // = assignment operator
     char letter = 'r';
 
     boolean someBool = false;
@@ -88,9 +90,14 @@ public class Main {
     // Loops
     int[] someArray = {1, 54, 12, 358, 716, 2376, 243};
 
+    String anotherString = new String("My fancy new string");
     // Known number of iterations
-    for (int controlVariable = 0; controlVariable < someArray.length; controlVariable++) {
+    for (int controlVariable = 0; controlVariable < someArray.length; controlVariable++)
+    {
+      anotherString = "lafdjökla";
       System.out.println(someArray[controlVariable]);
+
+      System.out.println(anotherString);
     }
 
     for (int element : someArray) {
@@ -99,9 +106,44 @@ public class Main {
 
     // Unknown number of iterations
     while (someBool) {
-      if (someFuncion()) {
+      if (!someFuncion()) {
         break;
       }
     }
+
+    // Functions
+    someBool = someFuncion();
+
+    System.out.println(someFuncion());
+
+    // Scope (variable scope)
+    {
+      int my_number = 3434;
+      System.out.println("my_number in first scope:" + my_number);
+    }
+
+    {
+      int my_number = 19191;
+      System.out.println("my_number in second scope:" + my_number);
+    }
+
+    // Type name = new Type();
+    Color myColor = new Color(128, 23, 3000);
+    myColor.print();
+
+    Color myOtherColor = new Color(255, 255, 255);
+    myOtherColor.setBlue(200);
+
+    System.out.println(myColor.getGreen());
+
+    myColor.setRed(255);
+
+    myOtherColor.print();
+  }
+
+  // Function declaration
+  public static boolean someFuncion() {
+    /* Function body */
+    return false;
   }
 }
