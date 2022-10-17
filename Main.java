@@ -134,11 +134,13 @@ public class Main {
     Color myOtherColor = new Color(255, 255, 255);
     myOtherColor.setBlue(200);
 
-    System.out.println(myColor.getGreen());
+    System.out.println("myColor.green():"+myColor.getGreen());
 
     myColor.setRed(255);
 
-    myOtherColor.print();
+    myOtherColor.print(); // (255, 255, 200)
+
+    System.out.println("myOtherColor.toString().charAt(3):"+myOtherColor.toString().charAt(3));
   }
 
   // Function declaration

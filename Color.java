@@ -58,6 +58,10 @@ public class Color {
   }
 
   public void print() {
-    System.out.printf("(%d, %d, %d)", this.red, this.green, this.blue);
+    System.out.printf("(%d, %d, %d)\n", this.red, this.green, this.blue);
+  }
+
+  public String toString() {
+    return String.format( "(%d, %d, %d)", this.red, this.green, this.blue);
   }
 }
