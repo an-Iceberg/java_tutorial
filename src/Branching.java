@@ -1,3 +1,5 @@
+package src;
+
 public class Branching {
   public static void run() {
     System.out.println("  Branching".toUpperCase());

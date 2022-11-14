@@ -1,3 +1,5 @@
+package src;
+
 public class Operators {
   public static void run() {
     System.out.println("  Operators".toUpperCase());

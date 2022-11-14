@@ -1,3 +1,5 @@
+package src;
+
 public class Variables {
   public static void run() {
     System.out.println("  Variables".toUpperCase());
@@ -29,23 +31,23 @@ public class Variables {
 
     // ### Type casting
 
-    /**
-     * Primitive number types can be categorized into following two categories:
-     *
-     * Whole numbers
-     *   byte
-     *   short
-     *   int
-     *   long
-     *
-     * Fractional numbers (numbers with decimal places)
-     *   float
-     *   double
-     *
-     * Types can be cast freely but ⚠ be aware of loss of data ⚠
-     *
-     * e.x.: casting from a float to a short will lose all the decimal places and some places before the comma
-     */
+    /*
+    Primitive number types can be categorized into following two categories:
+
+    Whole numbers
+      byte
+      short
+      int
+      long
+
+    Fractional numbers (numbers with decimal places)
+      float
+      double
+
+    Types can be cast freely but ⚠ be aware of loss of data ⚠
+
+    e.x.: casting from a float to a short will lose all the decimal places and some places before the comma
+    */
 
     // Example cast with data loss (narrowing cast) (needs explicit syntax)
     number = (int) my_float;
