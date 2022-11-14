@@ -134,13 +134,57 @@ public class Main {
     Color myOtherColor = new Color(255, 255, 255);
     myOtherColor.setBlue(200);
 
-    System.out.println("myColor.green():"+myColor.getGreen());
+    System.out.println("myColor.green():" + myColor.getGreen());
 
     myColor.setRed(255);
 
     myOtherColor.print(); // (255, 255, 200)
 
     System.out.println("myOtherColor.toString().charAt(3):"+myOtherColor.toString().charAt(3));
+
+    System.out.println();
+
+    Ampel ampelZHAW = Ampel.ROT;
+
+    System.out.println(ampelZHAW);
+
+    ampelZHAW = Ampel.GRÜN;
+
+    switch (ampelZHAW) {
+      case ROT: break;
+      case GRÜN: break;
+      case ROT_GELB: break;
+      case GELB: break;
+
+      default: break;
+    }
+
+    Variables.run();
+    System.out.println();
+
+    Operators.run();
+    System.out.println();
+
+    Statement_vs_Expression.run();
+    System.out.println();
+
+    Branching.run();
+    System.out.println();
+
+    Loops.run();
+    System.out.println();
+
+    Functions.run();
+    System.out.println();
+
+    Scope.run();
+    System.out.println();
+
+    DataStructures.run();
+    System.out.println();
+
+    Classes.run();
+    System.out.println();
   }
 
   // Function declaration

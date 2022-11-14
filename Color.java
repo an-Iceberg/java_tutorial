@@ -1,11 +1,16 @@
 public class Color {
   private int red;
   private int green;
-  private int blue;
+  private int blue = 255;
 
   /* Default constructor */
-  public Color() {}
+  public Color() {
+    this.red = 0;
+    this.green = 0;
+    this.blue = 0;
+  }
 
+  /* Constructor */
   public Color(int red, int green, int blue) {
     red = checkColorValidity(red);
     green = checkColorValidity(green);
