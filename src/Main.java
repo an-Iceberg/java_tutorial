@@ -173,6 +173,9 @@ public class Main {
     Branching.run();
     System.out.println();
 
+    DataStructures.run();
+    System.out.println();
+
     Loops.run();
     System.out.println();
 
@@ -180,9 +183,6 @@ public class Main {
     System.out.println();
 
     Scope.run();
-    System.out.println();
-
-    DataStructures.run();
     System.out.println();
 
     Classes.run();
