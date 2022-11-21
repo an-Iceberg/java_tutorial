@@ -4,15 +4,9 @@
       "name": "Run",
       "type": "f5anything",
       "request": "launch",
-      "command": "javac -encoding UTF-8 src/Main.java; java src/Main",
+      "command": "javac -encoding UTF-8 src/Main.java -d out; java -cp out src/Main",
       "terminalName": "Java",
       "showTerminal": true
     },
-    {
-      "type": "java",
-      "name": "Debug",
-      "request": "launch",
-      "mainClass": "${workspaceFolder}/src/Main.java"
-    }
   ]
 }
