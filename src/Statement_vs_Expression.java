@@ -19,6 +19,8 @@ public class Statement_vs_Expression {
     }
 
     // Statements
-    // A statement does something
+    // A statement does something but doesn't return a value
+
+    // Very often in coding we are dealing with expressions within statements
   }
 }
