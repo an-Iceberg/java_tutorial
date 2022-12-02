@@ -18,13 +18,16 @@ public class Loops {
       System.out.println(anotherString);
     }
 
-    for (int element : someArray) {
+    for (int element : someArray)
+    {
       System.out.println(element);
     }
 
     // Unknown number of iterations
-    while (true) {
-      if (!False()) {
+    while (true)
+    {
+      if (!False())
+      {
         break;
       }
     }
