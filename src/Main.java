@@ -32,5 +32,8 @@ public class Main {
 
     Strings.run();
     System.out.println();
+
+    StaticVsDynamicTypes.run();
+    System.out.println();
   }
 }
